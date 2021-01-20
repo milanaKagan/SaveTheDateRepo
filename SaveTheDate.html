@@ -92,11 +92,16 @@
     
 
     <audio src="src/audio.mp3" class="audio" controls preload="metadata" type="mp3"></audio>
-
+    <button onclick="disapperPortrait()">המשך במסע</button>
     <script>
         var myIndex = 0;
         carousel();
-        
+
+        function disapperPortrait(){
+            var portraitWrapper = document.getElementsByClassName("portrait-wrapper");
+            portraitWrapper[0].style.display = 'none';
+        }
+
         function carousel() {
         var i;
         var x = document.getElementsByClassName("mySlides");
